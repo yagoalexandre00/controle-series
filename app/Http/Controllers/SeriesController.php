@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
-class SeriesController
+use Illuminate\Http\Request;
+
+class SeriesController extends Controller
 {
-    public function listaSeries()
+    public function index()
     {
         $listaDeSeries = [
             'Brooklin 99',
