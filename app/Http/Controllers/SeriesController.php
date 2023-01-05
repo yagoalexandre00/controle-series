@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use function Termwind\renderUsing;
 
 class SeriesController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
+        
         $listaDeSeries = [
             'Brooklin 99',
             'Casamento às Cegas: Brasil',
@@ -19,6 +21,7 @@ class SeriesController extends Controller
             $html .= "<li>$series</li>";
         }
         $html .= "</ul>";
-        echo $html;
+
+        return $html;
     }
 }
