@@ -9,19 +9,13 @@ class SeriesController extends Controller
 {
     public function index(Request $request)
     {
-        
-        $listaDeSeries = [
+
+        $series = [
             'Brooklin 99',
             'Casamento às Cegas: Brasil',
             'Dahmer: Um Canibal Americano '
         ];
 
-        $html = '<ul>';
-        foreach ($listaDeSeries as $series) {
-            $html .= "<li>$series</li>";
-        }
-        $html .= "</ul>";
-
-        return $html;
+        return view('listar-series', compact('series'));
     }
 }
