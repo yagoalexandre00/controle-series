@@ -16,6 +16,7 @@ class SeriesController extends Controller
             'Dahmer: Um Canibal Americano '
         ];
 
-        return view('listar-series', compact('series'));
+        return view('listar-series')
+            ->with('series', $series);
     }
 }
