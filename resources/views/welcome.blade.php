@@ -2,7 +2,8 @@
 @section('title', 'Página Inicial')
 @section('content')
 
-
-    <h1>Sofia Sans</h1>
+    <div class="header-container">
+        <h1>Página inicial</h1>
+    </div>
 
 @endsection

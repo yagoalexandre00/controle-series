@@ -24,20 +24,18 @@
 
 <body>
 
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="img/movie-logo.png" alt="">
-        </a>
-        <div class="collapse navbar-collapse">
+    <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#"><img src="img/movie-logo.png" alt=""></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="">Home</a>
+                    <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Séries</a>
+                    <a class="nav-link" href="#">Séries</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Filmes</a>
+                    <a class="nav-link" href="#">Filmes</a>
                 </li>
             </ul>
         </div>

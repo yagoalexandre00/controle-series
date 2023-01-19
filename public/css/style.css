@@ -3,9 +3,32 @@
 }
 
 /* Navbar */
+.navbar {
+    background-color: black;
+}
 
-.navbar-brand img{
+.navbar-brand img {
     height: 60px;
     width: 60px;
     margin: 10px;
+}
+
+.navbar-nav a {
+    font-size: 20px;
+    margin: 5px;
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar-nav a:hover {
+    color: rgb(255, 138, 95);
+}
+
+/* Header */
+.header-container {
+    margin: 30px;
+}
+
+.header-container h1 {
+    margin-top: 20px;
 }
