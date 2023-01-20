@@ -5,10 +5,12 @@
     <div class="header-container">
         <h1>Séries</h1>
         @if (count($series) == 0)
-            <p class="series-p">Parece que você ainda não adicionou nenhuma série na sua lista de espera. <a href="#">Adicione clicando
+            <p class="series-p">Parece que você ainda não adicionou nenhuma série na sua lista de espera. <a
+                    href="/series/adicionar">Adicione clicando
                     aqui</a></p>
         @else
-            <p class="series-p">Estas são as séries que você adicionou na sua lista de espera. <a href="#">Adicione mais clicando
+            <p class="series-p">Estas são as séries que você adicionou na sua lista de espera. <a
+                    href="/series/adicionar">Adicione mais clicando
                     aqui</a></p>
         @endif
     </div>

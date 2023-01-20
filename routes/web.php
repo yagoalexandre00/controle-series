@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('/series', [SeriesController::class, 'index']);
+Route::get('/series/adicionar', [SeriesController::class, 'create'])->name('series.create');

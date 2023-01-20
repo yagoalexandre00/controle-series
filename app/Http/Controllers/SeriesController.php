@@ -13,4 +13,9 @@ class SeriesController extends Controller
         $series = Serie::all();
         return view('series.index', ['series' => $series]);
     }
+
+    public function create()
+    {
+        return view('series.create');
+    }
 }
