@@ -1,10 +1,10 @@
 * {
-    font-family: 'Sofia Sans';
+    font-family: "Sofia Sans";
 }
 
 /* Navbar */
 .navbar {
-    background-color: black;
+    background-color: #252525cc;
 }
 
 .navbar-brand img {
@@ -54,7 +54,27 @@
 
 .series-container thead {
     background-color: rgb(255, 138, 95);
-    color: black;
+    color: 252525cc;
     font-size: 20px;
     display: auto;
+}
+
+/* Series Create */
+.create-form {
+    margin: 30px;
+}
+.form-group {
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #252525cc;
+    color: #FFFF;
+    border-color: #050505cc;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #050505cc;
+    border-color: #050505cc;
 }

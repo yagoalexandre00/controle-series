@@ -18,5 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/series', [SeriesController::class, 'index']);
-Route::get('/series/adicionar', [SeriesController::class, 'create'])->name('series.create');
+
+Route::controller(SeriesController::class)->group(function () {
+    Route::get('/series', 'index');
+    Route::get('/series/adicionar', 'create');
+});
