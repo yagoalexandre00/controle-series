@@ -18,4 +18,16 @@ class SeriesController extends Controller
     {
         return view('series.create');
     }
+
+    public function store(Request $request)
+    {
+        $serie = new Serie;
+        $serie->title = $request->title;
+        $serie->genre = $request->genre;
+        $serie->platform = $request->platform;
+        $serie->year = $request->year;
+
+        $serie->save();
+        return redirect('/series')->with('msg', 'Série adicionada com sucesso!');
+    }
 }

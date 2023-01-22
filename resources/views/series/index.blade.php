@@ -6,11 +6,11 @@
         <h1>Séries</h1>
         @if (count($series) == 0)
             <p class="series-p">Parece que você ainda não adicionou nenhuma série na sua lista de espera. <a
-                    href="/series/adicionar">Adicione clicando
+                    href="/series/create">Adicione clicando
                     aqui</a></p>
         @else
             <p class="series-p">Estas são as séries que você adicionou na sua lista de espera. <a
-                    href="/series/adicionar">Adicione mais clicando
+                    href="/series/create">Adicione mais clicando
                     aqui</a></p>
         @endif
     </div>
@@ -21,10 +21,10 @@
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Title</th>
-                        <th scope="col">Genre</th>
-                        <th scope="col">Platform</th>
-                        <th scope="col">Released at</th>
+                        <th scope="col">Título</th>
+                        <th scope="col">Gênero</th>
+                        <th scope="col">Plataforma</th>
+                        <th scope="col">Ano de Lançamento</th>
                     </tr>
                 </thead>
                 <tbody>

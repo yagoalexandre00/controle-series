@@ -8,7 +8,8 @@
     </div>
 
     <div class="create-form">
-        <form action="/series/adicionar/concluido" method="POST">
+        <form action="/series" method="POST">
+            @csrf
             <div class="form-group">
                 <label for="title">Título</label>
                 <input type="text" class="form-control" id="title" name="title" placeholder="Título do filme">

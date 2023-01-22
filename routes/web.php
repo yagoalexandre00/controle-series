@@ -18,8 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 Route::controller(SeriesController::class)->group(function () {
     Route::get('/series', 'index');
-    Route::get('/series/adicionar', 'create');
+    Route::get('/series/create', 'create');
+    Route::post('/series', 'store');
 });
