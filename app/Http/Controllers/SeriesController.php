@@ -26,6 +26,7 @@ class SeriesController extends Controller
         $serie->genre = $request->genre;
         $serie->platform = $request->platform;
         $serie->year = $request->year;
+        $serie->user_id = auth()->user()->id;
 
         $serie->save();
         return redirect('/series')->with('msg', 'Série adicionada com sucesso!');
