@@ -1,18 +1,18 @@
 @extends('components.layout')
-@section('title', 'Adicionar Série')
+@section('title', 'Adicionar Filme')
 @section('content')
 
     <div class="header-container">
-        <h1>Adicionar série</h1>
-        <p>Aqui você poderá inserir a série que deseja assistir em breve!</p>
+        <h1>Adicionar filme</h1>
+        <p>Aqui você poderá inserir o filme que deseja assistir em breve!</p>
     </div>
 
     <div class="create-form">
-        <form action="/series" method="POST">
+        <form action="/filmes" method="POST">
             @csrf
             <div class="form-group">
                 <label for="title">Título</label>
-                <input type="text" class="form-control" id="title" name="title" placeholder="Título da série">
+                <input type="text" class="form-control" id="title" name="title" placeholder="Título do filme">
             </div>
             <div class="form-group">
                 <label for="genre">Gênero</label>
@@ -33,8 +33,7 @@
             </div>
             <div class="form-group">
                 <label for="year">Ano de lançamento</label>
-                <input type="number" min="0" max="{{ date('Y') }}" step="1" class="form-control"
-                    id="year" name="year" placeholder="Ano exato de lançamento da série">
+                <input type="number" min="0" max="{{ date('Y') }}" step="1" class="form-control" id="year" name="year" placeholder="Ano exato de lançamento do filme">
             </div>
 
             <button class="btn btn-primary btn-create">Adicionar</button>

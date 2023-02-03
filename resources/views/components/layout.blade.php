@@ -37,7 +37,7 @@
                         <a class="nav-link" href="/series">Séries</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Filmes</a>
+                        <a class="nav-link" href="/filmes">Filmes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Dashboard</a>
@@ -47,18 +47,20 @@
                     </li>
                 @endauth
                 @guest
-                <li class="nav-item">
-                    <a class="nav-link" href="/login">Entrar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/register">Registrar</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Entrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/register">Registrar</a>
+                    </li>
                 @endguest
             </ul>
         </div>
     </nav>
 
     @yield('content')
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

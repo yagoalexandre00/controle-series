@@ -40,19 +40,22 @@
 }
 
 /* Series Index */
-.series-p a {
+.series-p a,
+.movies-p a {
     color: rgb(255, 138, 95);
     cursor: pointer;
     text-decoration: none;
 }
 
-.series-container table {
+.series-container table,
+.movies-container table {
     width: 80%;
     margin: auto;
     text-align: center;
 }
 
-.series-container thead {
+.series-container thead,
+.movies-container thead {
     background-color: rgb(255, 138, 95);
     color: 252525cc;
     font-size: 20px;
@@ -63,6 +66,7 @@
 .create-form {
     margin: 30px;
 }
+
 .form-group {
     margin-top: 10px;
 }
@@ -72,10 +76,19 @@
     color: #FFFF;
     border-color: #050505cc;
     transition: 0.3s;
-    margin-top: 10px;
 }
 
 .btn-primary:hover {
     background-color: #050505cc;
     border-color: #050505cc;
+}
+
+.btn-create {
+    margin-top: 10px;
+}
+
+.btn-watched {
+    margin: 0;
+    padding-bottom: 25px;
+    height: 15px;
 }

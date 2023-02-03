@@ -1,22 +1,21 @@
 @extends('components.layout')
-@section('title', 'Séries')
+@section('title', 'Filmes')
 @section('content')
 
     <div class="header-container">
-        <h1>Séries</h1>
-        @if (count($series) == 0)
-            <p class="series-p">Parece que você ainda não adicionou nenhuma série na sua lista de espera. <a
-                    href="/series/create">Adicione clicando
+        <h1>Filmes</h1>
+        @if (count($movies) == 0)
+            <p class="movies-p">Parece que você ainda não adicionou nenhum filme na sua lista de espera. <a
+                    href="/filmes/create">Adicione clicando
                     aqui</a></p>
         @else
-            <p class="series-p">Estas são as séries que você adicionou na sua lista de espera. <a
-                    href="/series/create">Adicione mais clicando
-                    aqui</a></p>
+            <p class="movies-p">Estas são os filmes que você adicionou na sua lista de espera. <a
+                    href="/filmes/create">Adicione mais clicando aqui</a></p>
         @endif
     </div>
 
-    @if (count($series) > 0)
-        <div class="series-container">
+    @if (count($movies) > 0)
+        <div class="movies-container">
             <table class="table table-hover">
                 <thead>
                     <tr>
@@ -29,7 +28,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($series as $serie)
+                    @foreach ($movies as $serie)
                         <tr>
                             <th scope="row">{{ $serie->id }}</th>
                             <td>{{ $serie->title }}</td>
@@ -38,7 +37,8 @@
                             <td>{{ $serie->year }}</td>
                             <td>
                                 <a href="#" class="btn btn-primary btn-watched">
-                                    <ion-icon name="checkmark-circle"></ion-icon></ion-icon>
+                                    <ion-icon name="checkmark-circle"></ion-icon>
+                                    </ion-icon>
                                 </a>
                             </td>
                         </tr>
