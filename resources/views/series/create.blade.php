@@ -20,8 +20,6 @@
             </div>
             <div class="form-group">
                 <label for="platform">Plataforma de Streaming</label>
-                {{-- <input type="text" class="form-control" id="platform" name="platform"
-                    placeholder="Ex.: Netflix, Amazon, Disney..."> --}}
             </div>
             <div class="form-group">
                 <select name="platform" id="platform">
@@ -35,8 +33,7 @@
             </div>
             <div class="form-group">
                 <label for="year">Ano de lançamento</label>
-                <input type="text" class="form-control" id="year" name="year"
-                    placeholder="Ano exato de lançamento do filme">
+                <input type="number" min="0" max="{{ date('Y') }}" step="1" class="form-control" id="year" name="year" placeholder="Ano exato de lançamento do filme">
             </div>
 
             <button class="btn btn-primary">Adicionar</button>
